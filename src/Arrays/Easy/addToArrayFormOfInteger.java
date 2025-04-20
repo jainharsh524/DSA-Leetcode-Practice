@@ -29,6 +29,10 @@ public class addToArrayFormOfInteger {
 //    }
     //giving the error for this case: int[] arr = {1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3};
     //Saw the solution
+    //don't add whole number altogether.
+    //go to summation basics.
+    //start summation of ones place and add the result to list.
+    //then tens, hundreds place etc.
     public List<Integer> addToArrayForm(int[] num, int k) {
         List<Integer> result = new ArrayList<>();
         int i = num.length - 1;
@@ -43,7 +47,7 @@ public class addToArrayFormOfInteger {
     }
     public static void main(String[] args) {
         int[] arr = {1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3};
-        System.out.println(arrayToNum(arr));
+//        System.out.println(arrayToNum(arr));
 //        System.out.println(addToArrayForm(arr, 516));
         BigInteger largeNumber = new BigInteger("123456789012345678901234567890");
     }
