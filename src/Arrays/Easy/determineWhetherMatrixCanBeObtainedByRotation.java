@@ -1,5 +1,6 @@
 package Arrays.Easy;
 
+//Q.1886 https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/description/
 public class determineWhetherMatrixCanBeObtainedByRotation {
     //# Approach
     //I have 2 approaches for this question:
