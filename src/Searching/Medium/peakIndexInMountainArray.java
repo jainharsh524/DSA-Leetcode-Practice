@@ -2,7 +2,7 @@ package Searching.Medium;
 
 //Q.852 https://leetcode.com/problems/peak-index-in-a-mountain-array/
 public class peakIndexInMountainArray {
-    public int peakIndexInMountainArray(int[] arr) {
+    public static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 

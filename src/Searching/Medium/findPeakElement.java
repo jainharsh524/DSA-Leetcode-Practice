@@ -2,7 +2,7 @@ package Searching.Medium;
 
 //Q.162 https://leetcode.com/problems/find-peak-element/
 public class findPeakElement {
-    public int findPeakElement(int[] nums) {
+    public static int findPeakElement(int[] nums) {
         int start = 0;
         int end = nums.length - 1;
 
