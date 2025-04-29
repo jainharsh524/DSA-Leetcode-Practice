@@ -5,6 +5,7 @@ import java.util.HashSet;
 
 //Q.349 https://leetcode.com/problems/intersection-of-two-arrays/
 public class intersectionOfTwoArrays {
+
     public static int bSearch(int[] arr, int target){
         int low = 0;
         int high = arr.length-1;
