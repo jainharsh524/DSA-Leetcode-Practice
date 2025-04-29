@@ -1,6 +1,7 @@
 package Searching.Medium;
 
 //Q.852 https://leetcode.com/problems/peak-index-in-a-mountain-array/
+//Sol. https://leetcode.com/problems/peak-index-in-a-mountain-array/solutions/6686883/easy-java-solution-beats-100/
 public class peakIndexInMountainArray {
     public static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
