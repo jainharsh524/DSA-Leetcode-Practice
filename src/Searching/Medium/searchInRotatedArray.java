@@ -1,6 +1,7 @@
 package Searching.Medium;
 
 //Q.33 https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+//Sol. https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/6690339/easy-solution-beats-100-using-binary-search/
 public class searchInRotatedArray {
     //Approach
     //Find the pivot(Point of rotation of array/max element in array)

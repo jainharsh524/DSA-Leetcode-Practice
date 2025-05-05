@@ -1,6 +1,7 @@
 package Searching.Medium;
 
 //Q.745 https://leetcode.com/problems/reach-a-number/description/
+//Sol. https://leetcode.com/problems/reach-a-number/solutions/6711026/easy-java-solution-beats-100-both-with-and-without-binary-search/
 public class reachANumber {
     //# Algorithm without Binary Search:
     //

@@ -1,6 +1,7 @@
 package Searching.Medium;
 
 //Q.1802 https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/description/
+//Sol. https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/solutions/6714409/easy-binary-search-solution-in-java-beats-100/
 public class maximumValueAtGivenIndexInBoundedArray {
     //Approach
     //This is a classic binary search + greedy math problem. Let’s break it down in a structured way:
