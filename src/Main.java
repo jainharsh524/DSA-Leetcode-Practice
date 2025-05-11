@@ -38,6 +38,7 @@ public class Main {
         }
         return arr;
     }
+
     public static void main(String[] args) {
 //        System.out.println(maxProduct(124));
         int[][] arr = specialGrid(3);
