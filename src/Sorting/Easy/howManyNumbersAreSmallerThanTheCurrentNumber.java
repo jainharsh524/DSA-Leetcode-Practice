@@ -1,7 +1,15 @@
 package Sorting.Easy;
 
 //Q.1365 https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+//Sol. https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/solutions/6670724/solution-with-o-n-time-complexity-by-using-the-bucket-frequency-counting-method/
 public class howManyNumbersAreSmallerThanTheCurrentNumber {
+    //Approach
+    //This method of counting the frequency of array elements is from bucket sort algorithm.
+    //
+    //In this method we create a bucket whose length is equal to the maximum element in the array.
+    //Then we increase the index value by 1 every time we encounter an element that is equal to the index number.
+    //Hence, we get an array which holds the frequency of each unique element in the array.
+    //Then we convert the bucket array into a running summation array, so that we can get the number of elements smaller than current element.
     static int findMax(int[] arr){
         int max = arr[0];
         for (int i =0;i<arr.length;i++){
