@@ -13,8 +13,10 @@ public class groupAnagrams {
             char[] chars = str.toCharArray();
             Arrays.sort(chars);
             String sorted = new String(chars);
-
-            map.computeIfAbsent(sorted, k -> new ArrayList<>()).add(str);
+            if (!map.containsKey(sorted)) {
+                map.put(sorted, new ArrayList<>());
+            }
+            map.get(sorted).add(str);
         }
 
         return new ArrayList<>(map.values());
