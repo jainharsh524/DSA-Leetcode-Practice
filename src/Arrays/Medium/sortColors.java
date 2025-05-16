@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 //Q.75 https://leetcode.com/problems/sort-colors/
+//Sol. https://leetcode.com/problems/sort-colors/solutions/6684245/easy-java-solution-3-pointers-approach-added-at-last-o-1-space-and-o-n-time-complexity/
 public class sortColors {
     //# Approach
     //- Step 1: Count the frequency of 0s, 1s, and 2s.
