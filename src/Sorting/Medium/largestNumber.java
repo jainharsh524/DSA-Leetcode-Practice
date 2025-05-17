@@ -1,4 +1,4 @@
-package Arrays.Medium;
+package Sorting.Medium;
 
 import java.util.Arrays;
 import java.util.Comparator;
