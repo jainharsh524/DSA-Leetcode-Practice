@@ -2,36 +2,24 @@ package String.Medium;
 
 //Q.1616 https://leetcode.com/problems/split-two-strings-to-make-palindrome/
 public class splitTwoStringsToMakePalindrome {
-    public static boolean isPalindrome(String s) {
-        int i =0;
-        int j =s.length()-1;
-        while(i<j){
-            if(s.charAt(i)==s.charAt(j)){
-                i++;j--;
-            }
-            else if(s.charAt(i)!=s.charAt(j)){
-                return false;
-            }
+    public static boolean isPalindrome(String s, int left, int right) {
+        while (left < right) {
+            if (s.charAt(left++) != s.charAt(right--)) return false;
         }
         return true;
     }
-    public static boolean checkPalindromeFormation(String a, String b) {
-        if(isPalindrome(a)||isPalindrome(b)) return true;
-        else{
-            int ptr1 = 0;
-            int ptr2 = b.length()-1;
-            while (ptr1 < a.length()-1 && ptr2 >= 0) {
-                if (a.charAt(ptr1) != b.charAt(ptr2)) {
-                    break;
-                }
-                ptr1++;
-                ptr2--;
-            }
-            if(isPalindrome(String.copyValueOf(a.toCharArray(), ptr1, a.length()-ptr1-ptr2))||isPalindrome(String.copyValueOf(b.toCharArray(), ptr1, a.length()-ptr1-ptr2))) {
-                return true;
-            }
+
+    public static boolean check(String a, String b) {
+        int i = 0, j = b.length() - 1;
+        while (i < j && a.charAt(i) == b.charAt(j)) {
+            i++;
+            j--;
         }
-        return false;
+        return isPalindrome(a, i, j) || isPalindrome(b, i, j);
+    }
+
+    public static boolean checkPalindromeFormation(String a, String b) {
+        return check(a, b) || check(b, a);
     }
     public static void main(String[] args) {
         String a = "harsh";
