@@ -156,17 +156,30 @@ public class Main {
         }
         return num1 - num2;
     }
-
-
-
+    public static String deleteMultipleIndexes(String str, Integer[] indexes) {
+        StringBuilder sb = new StringBuilder(str);
+        List<Integer> indexList = Arrays.asList(indexes);
+        Collections.sort(indexList, Collections.reverseOrder());
+        for (int index : indexList) {
+            if (index >= 0 && index < sb.length()) {
+                sb.deleteCharAt(index);
+            }
+        }
+        return sb.toString();
+    }
     public static void main(String[] args) {
 //        System.out.println(maxProduct(124));
 //        int[][] arr = specialGrid(3);
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.println(Arrays.toString(arr[i]));
 //        }
-        String[] arr1 = {".A","CA"};
-        System.out.println(minMoves(arr1));
-        System.out.println("Hello world!");
+//        String[] arr1 = {".A","CA"};
+//        System.out.println(minMoves(arr1));
+//        System.out.println("Hello world!");
+        String originalString = "abcdefgh";
+        Integer[] indicesToRemove = {1, 3, 5};
+        String resultString = deleteMultipleIndexes(originalString, indicesToRemove);
+        System.out.println("Original String: " + originalString);
+        System.out.println("Result String: " + resultString);
     }
 }
