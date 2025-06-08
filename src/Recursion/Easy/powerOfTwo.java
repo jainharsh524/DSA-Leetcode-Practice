@@ -19,12 +19,12 @@ public class powerOfTwo {
     }
 
     //Another Method using Bitwise Operators
-    public boolean isPowerOfTwo1(int n) {
+    public static boolean isPowerOfTwo1(int n) {
         if ( n <= 0) return false;
-        return (n & (n-1)) == 0;
+        return (n & (n-1)) == 1;
     }
     public static void main(String[] args) {
-        System.out.println(isPowerOfTwo(7));
+        System.out.println(isPowerOfTwo1(9));
         double a = 7.0;
 
     }
