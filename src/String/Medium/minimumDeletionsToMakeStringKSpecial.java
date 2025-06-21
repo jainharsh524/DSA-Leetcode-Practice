@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 //Q.3085 https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/description/?envType=daily-question&envId=2025-06-21
+//Sol. https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/solutions/6868636/easy-java-solution-using-greedy-and-hash-6la9/
 public class minimumDeletionsToMakeStringKSpecial {
     public static int minimumDeletions(String word, int k) {
         int countMin = word.length();
