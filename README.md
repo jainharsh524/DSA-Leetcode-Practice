@@ -53,5 +53,3 @@ Each problem includes:
 * Sorting & Searching
 
 ---
-
-Let me know if you'd also like help structuring folders for separating Java and C solutions.
